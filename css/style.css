@@ -202,7 +202,7 @@ justify-content: center;
     color: var(--text-color-2);
 }
 .cards-content {
-    width: 11rem;
+    min-width: 9rem;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -295,9 +295,9 @@ justify-content: center;
     }
     
     .promo{
+        min-height: 12rem;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
         align-items: center;
 
     }
@@ -324,4 +324,9 @@ justify-content: center;
         display: none;
         margin-bottom: 0;
     }
+    .promo{
+        min-height: 16rem;
+
+    }
+
 }
