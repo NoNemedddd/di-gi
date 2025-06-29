@@ -33,25 +33,31 @@ header{
 .intro{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     color:var(--text-color-1);
     font-family: Roboto Condensed;
     align-items: center;
-    min-height: 668px;
+    height: 668px;
     background: url(../images/bg-img.jpg) no-repeat center center / cover;
 }
 .intro-content{
-    margin: 4rem 0;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 34rem;
-    min-height: 27rem;
+    max-height: 34rem;
 }
 #intro-title{
     font-size: 6rem;
     margin: 0;
+}
+#mini-line{
+    display: none;
+    background-color: #4A4A4A;
+    padding: 0.25rem 2rem ;
+    margin: 0.6rem 0 1.8rem 0;
 }
 #intro-text{
     margin: 1.8rem 0 1.5rem 0;
@@ -65,13 +71,11 @@ header{
     background: var(--main-color-1);
     color: var(--text-color-1);
 }
-#pagination{
-    margin-top: auto;
-}
 .promo{
+    padding: 1rem;
     display: flex;
     align-items: center;
-    height: 12rem;
+    min-height: 12rem;
     background: var(--main-color-1);
     justify-content: space-around;
 }
@@ -90,6 +94,7 @@ header{
 
 }
 #promo-call-button{
+    margin-top: 0.8rem;
     height: 50px;
     width: 200px;
     border-radius: 3px;
@@ -239,6 +244,16 @@ justify-content: center;
    .title-h2{
     text-align: center;
    } 
+   
+    #intro-title{
+        font-size: 5rem;
+    }
+    #intro-text{
+        font-size: 1.125rem;
+    }
+    .intro{
+    height: 618px;
+    }
 
 }
 
@@ -251,6 +266,14 @@ justify-content: center;
     grid-template-rows: repeat(4, 18rem);
 
     }
+   
+    #intro-title{
+        font-size: 3.75rem;
+    }
+    .intro{
+    height: 465px;
+    }
+
 
 }
 
@@ -260,7 +283,24 @@ justify-content: center;
     text-align: center;
     align-items: center;
 }
+    .intro{
+    height: 386px;
+    }
+    
+    #intro-text{
+        display: none;
+    }
+    #mini-line{
+        display: block;
+    }
+    
+    .promo{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
+    }
 
 
 }
@@ -272,5 +312,16 @@ justify-content: center;
     grid-template-rows: repeat(8, 20rem);
 
     }
+   
 
+    .intro{
+    height: 200px;
+    }
+    #intro-title{
+        font-size: 1.75rem;
+    }
+    #intro-bg{
+        display: none;
+        margin-bottom: 0;
+    }
 }
