@@ -295,7 +295,7 @@ justify-content: center;
     }
     
     .promo{
-        min-height: 15rem;
+        min-height: 15.6rem;
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -325,7 +325,7 @@ justify-content: center;
         margin-bottom: 0;
     }
     .promo{
-        min-height: 18rem;
+        min-height: 18.5rem;
 
     }
 
